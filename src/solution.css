@@ -1,0 +1,32 @@
+.solution {
+    width: 80%;
+    margin: 20px 10%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    background-color: wheat;
+    box-shadow: 5px 5px ;
+}
+
+.single-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.solution p {
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+div.image-gallery {
+    width: 100%;
+    height: auto;
+}
+
+.image-gallery img {
+    width: 40%;
+    box-sizing: border-box;
+    margin: 10px 5%;
+    height: 200px;
+}
