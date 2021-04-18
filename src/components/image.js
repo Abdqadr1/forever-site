@@ -5,8 +5,8 @@ const IMAGE = (props) => {
             if(size === 1){
                 return <img className="single-image" src={props.image} alt={props.alt} />
             } else {
-                const images = props.images.map(image => {
-                    return <img src={image.image} alt={image.alt} />
+                const images = props.images.map((image, index) => {
+                    return <img src={image.image} alt={image.alt} key={index}/>
                 })
                 return (
                     <div className="image-gallery">
