@@ -4,14 +4,20 @@ class Countdown extends Component {
     state = { 
         timeInMilli: (60 * 60 * 24 * 5) + (60 * 60 * 7) + (60 * 50) + 59,
      }
-    
-     componentDidMount(){
-         setInterval(() => {
+
+     updateTimer =  () => {
             this.setState({
                 timeInMilli: this.state.timeInMilli - 1,
              })
-         }, 1000)
-         
+         }
+    
+     componentDidMount(){
+         setInterval(this.updateTimer, 1000);
+
+     }
+
+     componentWillUnmount(){
+         clearInterval(this.updateTimer);
      }
 
     render() { 

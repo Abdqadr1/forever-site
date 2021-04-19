@@ -2,6 +2,7 @@ import '../solution.css';
 import IMAGE from './image'
 import Countdown from './countdown';
 import OrderForm from "./orderForm";
+import author from '../data/author';
 import header_sexual from '../images/Produt-header-Sexual-1.jpg';
 import mens from '../images/Mensss-1.jpg';
 import intimacy from "../images/TEST14-1.jpg";
@@ -23,8 +24,24 @@ import cert from '../images/cert-1.jpg';
 import aloegel from '../images/aloe_vera_gel.png'
 import discount from '../images/discount-e1555572446153-1.png';
 import buy from '../images/202-2026311_green-buy-now-button-hd-png-download-1.png';
+import cash from '../images/cash_on_delivery.jpg';
+import pay from '../images/pay-on-delivery-1.png';
+import FAQ from '../images/faq.jpg';
+import How from '../images/howitworks.png';
+import Whatpple from '../images/what-people-are-saying.jpg';
+import IMG1 from '../images/IMG-20200616-WA0026-1.jpg';
+import IMG4 from '../images/IMG-20200616-WA0026-1.jpg';
+import IMG2 from '../images/TEST9-1.jpg';
+import IMG3 from '../images/TEST3-1.jpg';
 
-const Solution = () => {
+
+const Solution = (props) => {
+
+    const gotoThanks = () => {
+        console.log(props);
+        props.history.push("/thanks");
+    } 
+
     return ( 
     <div className="solution">
         <IMAGE size="1" image={header_sexual} alt="Header" />
@@ -114,7 +131,7 @@ const Solution = () => {
             <IMAGE size="1" image={guaranteed} alt="guaranteed" />
             <IMAGE size="1" image={beepollen} alt="bee pollen" />
             <h1>BEE POLLEN</h1>
-            <p>BEE POLLEN combines the powers of honey with royal jelly to bring you a unique supplement => Multi Maca or North American sage, was used by Southwest indians in the USA at the turn of the the 20th Century for its life-sustaining properties. 
+            <p>BEE POLLEN combines the powers of honey with royal jelly to bring you a unique supplement =&gt; Multi Maca or North American sage, was used by Southwest indians in the USA at the turn of the the 20th Century for its life-sustaining properties. 
             BEE POLLEN contains oestrogen substances. It also acts to improve circulation and is a powerful antioxidant. 
             Starting from the next 15 days…You’ll be enjoying sex more than you ever have… your woman will keep wanting more sex, and you get to have sex with her at your own will… no more lame excuses from her like “honey, am tired” …Yes! Even if it’s 2am in the midnight you want her, she will have sex with you.</p>
 
@@ -182,8 +199,51 @@ const Solution = () => {
             <IMAGE size="1" image={discount} alt="discount" />
             <p>YOU CANT AFFORD TO MISS THIS OPPORTUNITY</p>
             <IMAGE size="1" image={buy} alt="Buy now" />
-            <OrderForm />
+            <OrderForm gotoThanks={gotoThanks}/>
+            <IMAGE size="2" images={[{image: pay, alt:"pay on delivery"}, {image: cash, alt: "cash on delivery"}]} />
+            <p><span>YOU CAN ALSO</span> <span>CALL & MESSAGE MR LEKAN=&gt;&gt;</span><span>{author.number}</span></p>
+            <p>With the below details</p>
+            <ul>
+                <li>YOUR FULL NAME</li>
+                <li>ITEM NAME: (2IN1 OR 3IN1)</li>
+                <li>YOUR ACTIVE PHONE NUMBER(S)</li>
+                <li>FULL ADDRESS (HOME, OFFICE, ETC)</li>
+                <li>DATE YOU WANT US TO DELIVER IT  <span>Note: Delivery date should not be farther than 2 weeks from now</span></li>
+            </ul>
+            <IMAGE size="1" image={FAQ} alt="Frequently asked questions" />
+            <div className="faq-container">
+                <div className="faq">
+                    <p className="faq-title">WHAT ARE THE INTERNATIONAL AND LOCAL CERTIFICATIONS?</p>
+                    <p>It is NAFDAC  approved in (Nigeria).</p>
+                    <IMAGE size="1" image={How} alt="How does it work" />
+                </div>
+                <div className="faq">
+                    <p className="faq-title">HOW LONG SHOULD I USE THE PRODUCTS?</p>
+                    <p>You should start seeing result within 14 days (2 weeks). But you have to take them for a month for maximum result. You can get the 2 months pack if you really want to cement the gains.</p>
+                </div>
+                <div className="faq">
+                    <p className="faq-title">HOW DO YOU SHIP THIS PRODUCT TO ME?</p>
+                    <p>We ship nationwide and you can get the products anywhere you are within 24 hours of ordering. You don't have to pay before you get the products. You only pay when you receive your products. We collect cash or transfer on delivery.</p>
+                </div>
+                <div className="faq">
+                    <p className="faq-title">IS THE PACKAGE DISCREET?</p>
+                    <p>100% discreet, nobody not even the delivery agent knows what is inside the package. Be confident no one knows what is in the package.</p>
+                </div>
+                <div className="faq">
+                    <p className="faq-title">WHAT IS THE DAILY DOSAGE OF THE PRODUCTS?</p>
+                    <p>We send the dosage and other instructions to your phone number or email immediately the products are delivered to you.</p>
+                </div>
+                <div className="faq">
+                    <p className="faq-title">DOES THE PRODUCTS HAVE ADVERSE EFFECTS?</p>
+                    <p>No it does not have adverse effects they are natural supplements</p>
+                </div>
+            </div>
+            <IMAGE size="1" image={Whatpple} alt="What are people saying" />
+            <IMAGE size="4" images={[{image: IMG1}, {image: IMG4}, {image: IMG2}, {image: IMG3}]} />
+            <p>I COULD STILL SHOW YOU MORE PROOF AND IMAGES WITH LOT AND LOT OF TESTIMONIES BUT DUE TO OUR CLIENT CONFIDENTIALITY POLICY WE ADHERE TO STRICT GUIDANCE.</p>
+            <p>{author.name + " " + author.number}</p>
 
+            <p className="copyright center">FOREVER LIVING - Copyright © 2020.</p>
             
     </div> );
 }

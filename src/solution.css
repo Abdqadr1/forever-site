@@ -25,8 +25,7 @@ div.image-gallery {
 }
 
 .image-gallery img {
-    width: 40%;
+    width: 45%;
     box-sizing: border-box;
-    margin: 10px 5%;
-    height: 200px;
+    margin: 10px 2.5%;
 }
