@@ -45,34 +45,31 @@ const Solution = (props) => {
     return ( 
     <div className="solution">
         <IMAGE size="1" image={header_sexual} alt="Header" />
-        <p>"FINALLY EXPOSED: The Ancient Secret That Gives YOU A Proven, Permanent & All-Natural Cure For Erectile Dysfunction,
-         Premature Ejaculation and Enlarged Bigger Penis"</p>
-         <p>NOW YOU CAN GET ROCK-HARD ERECTIONS AND BIGGER MANHOOD ON COMMAND...</p>
-         <p>WITHOUT PUMPS, INJECTIONS OR SIDE EFFECTS...AND BE A "MAN OF STEEL" IN THE BEDROOM EVERY TIME​</p>
+        <p className="finally-exposed"><span className="bigger-text red-text">"FINALLY EXPOSED: </span>The Ancient Secret That Gives YOU A Proven, Permanent & All-<span>Natural Cure For Erectile Dysfunction,
+         Premature Ejaculation and Enlarged Bigger Penis"</span></p>
+         <p className="hard-rock center">NOW YOU CAN GET ROCK-HARD ERECTIONS AND BIGGER MANHOOD ON COMMAND...</p>
+         <p className="big-text yellow-text center italic" id="pumps">WITHOUT PUMPS, INJECTIONS OR SIDE EFFECTS...AND BE A "MAN OF STEEL" IN THE BEDROOM EVERY TIME​</p>
 
-         <p>The good news is that in the next few minutes you will have information about Natural and Permanent remedy!!! 
-         Say No To TRAMADOL, AGBO and other DRUGS for Sex with side effects!!!</p>
+         <p className="small-text left">The good news is that in the next few minutes you will have information about <span className="green-text">Natural and Permanent remedy!!!</span> 
+         Say No To <span className="red-text">TRAMADOL</span>, <span className="red-text">AGBO</span> and <span className="red-text">other DRUGS for Sex with side effects!!!</span></p>
 
-         <p>I'm going to share with you an unusual and ancient secret method that now gives me bulging, 
-         pulsating "SUPERMAN STYLE ERECTIONS" that make my wife the most satisfied woman on earth</p>
+         <p className="small-text left">I'm going to share with you an unusual and ancient secret method that now gives me bulging, 
+         pulsating <span className="big-text">"SUPERMAN STYLE ERECTIONS"</span> that make my wife the most satisfied woman on earth</p>
 
          <IMAGE size="1" image={mens} alt="Good news" />
          
-         <p>A WAY TO PERMANENTLY GET BIGGER PENIS, REVERSE E/D AND PREMATURE EJACULATION THAT IS EASY, SAFE, ALL-NATURAL AND PERMANENT, 
+         <p className="permanent center">A WAY TO PERMANENTLY GET BIGGER PENIS, REVERSE E/D AND PREMATURE EJACULATION THAT IS EASY, SAFE, ALL-NATURAL AND PERMANENT, 
          WITH NO HARMFUL SIDE EFFECTS WHATSOEVER.</p>
 
          <IMAGE size="1" image={intimacy} alt="intimacy" />
 
 
-         <p>This is why I urge you to block out all distractions and give me your undivided attention.
+         <p className="left urge"><span>This is why I urge you to block out all distractions and give me your undivided attention.</span><span>This really is THAT important...</span>
+            <span>Not just for you, but for your wife. And for your marriage. In fact...</span>
+            </p>
 
-            This really is THAT important...
-
-​            Not just for you, but for your wife. And for your marriage. In fact...
-
-            DID YOU KNOW???</p>
-
-            <ul>
+            <ul className="know-list yellow-text">
+                <p>DID YOU KNOW???</p>
                 <li>20 percent of breakup in Marriages and Relationships is Due to Poor Performance and Dissatisfaction in love making?</li>
                 <li>On average a man ejaculates 2-3 minutes after entering his partner - it takes a women on average 12-14 minutes to orgasm.</li>
                 <li>About 1 in 10 Men World-wide Have Weak Erection</li>
@@ -80,16 +77,16 @@ const Solution = (props) => {
                 <li>About 20 Million Men World-wide Have Used Or Are Using Viagra To Treat Weak Erection</li>
             </ul>
 
-            <p>They make life complex and complicated, resulting in low esteem of the man</p>
+            <p className="normal-text">They make life complex and complicated, resulting in low esteem of the man</p>
 
-            <p>ENOUGH SAID!!! NOW LETS TALK ABOUT PENIS SIZE HERE ARE SOME SCARY FACTS FOR YOU...</p>
+            <p className="green-text bigger-text center enough"><span>ENOUGH SAID!!! </span>NOW LETS TALK ABOUT PENIS SIZE HERE ARE SOME SCARY FACTS FOR YOU...</p>
 
             <IMAGE size="1" image={chart} alt="Chart"/>
             <IMAGE size="1" image={facts} alt="facts"/>
 
-            <p>FINALLY, ABOUT 1/3 OF MEN WITH THIS PROBLEM DO NOT SEEK HELP THIS MEANS, THEY SUFFER IN SILENCE NOW, 
+            <p className="about3 big-text"><span>FINALLY, ABOUT 1/3 OF MEN WITH THIS PROBLEM DO NOT SEEK HELP</span><span>THIS MEANS, THEY SUFFER IN SILENCE</span><span> NOW, 
             THAT IS A REALLY ALARMING STATISTICS. WEAK ERECTION, PREMATURE EJACULATION AND SMALL MANHOOD IS AN ISSUE THAT CANNOT BE SWEPT UNDER THE CARPET. 
-            YOU NEED TO ACT AS FAST AS POSSIBLE.</p>
+            YOU NEED TO ACT AS FAST AS POSSIBLE.</span> </p>
 
             <IMAGE size="1" image={stop} alt="Stop everything" />
 

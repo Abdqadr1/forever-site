@@ -22,3 +22,51 @@ footer p{
   color: wheat;
   margin: 20px auto;
 } */
+
+.italic {
+  font-style: italic;
+}
+
+.red-text {
+  color: red;
+}
+.green-text {
+  color: rgb(105, 226, 105);
+}
+.yellow-text {
+  color:rgb(236, 247, 33);
+}
+.darker-text {
+  color: rgb(10, 1, 1);
+}
+.normal-text {
+  font-size: large !important;
+  font-style: normal !important;
+  font-variant: normal !important;
+  font-weight: lighter;
+}
+.center {
+  margin: 15px auto !important;
+  text-align: center !important;
+}
+.big-text{
+  font-size: large !important;
+  font-weight: bold !important;
+  line-height: 1.5;
+}
+
+.bigger-text {
+  font-size: larger;
+  font-weight: bolder;
+  line-height: 1.5;
+}
+
+.small-text {
+  font-size: 1.2em !important;
+  font-weight: lighter !important;
+
+}
+
+.left {
+  text-align: left !important;
+}
