@@ -1,0 +1,47 @@
+div.admins {
+
+}
+
+div.header {
+    height: 30px;
+    background-color: rgb(74, 78, 82);
+}
+
+div.orders {
+    width: 94%;
+    box-sizing: border-box;
+    margin: 15px 3%;
+    height: auto;
+}
+div.orders p.no-orders {
+    font-size: larger;
+    font-weight: bolder;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    vertical-align: middle;
+    padding: 30px 0;
+}
+
+div.order {
+    width: 96%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 2px solid black;
+    padding: 10px 2%;
+    margin: 20px auto;
+}
+
+div.order p{
+    font-size: medium;
+    font-weight: 600;
+    margin: 8px 0;
+}
+
+div.order p span{
+    display: inline-block;
+    margin-right: 20px;
+    width: 200px;
+    font-size: medium;
+    font-weight: bold;
+    color: rgb(58, 58, 196);
+}

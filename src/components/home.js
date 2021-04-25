@@ -2,7 +2,7 @@
 import { Link } from 'react-router-dom';
 import err from '../images/err1.jpg';
 import arrow from '../images/Arrows_down_animated.gif';
-import '../home.css';
+import '../styles/home.css';
 const Home = () => {
     return (
          <div className="home-container">

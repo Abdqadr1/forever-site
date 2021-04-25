@@ -24,26 +24,46 @@ footer p{
 } */
 
 .italic {
-  font-style: italic;
+  font-style: italic !important;
 }
 
 .red-text {
-  color: red;
+  color: rgb(235, 41, 41) !important;
 }
 .green-text {
-  color: rgb(105, 226, 105);
+  color: rgb(105, 226, 105) !important;
 }
 .yellow-text {
-  color:rgb(236, 247, 33);
+  color:rgb(236, 247, 33) !important;
 }
+.purple-text {
+  color: rgb(143, 61, 143) !important;
+}
+
+.blue-text {
+  color: rgb(8, 8, 240) !important;
+}
+
 .darker-text {
   color: rgb(10, 1, 1);
 }
+.strike-through {
+  text-decoration: line-through !important;
+}
+.underline {
+  text-decoration: underline !important;
+}
+.bold {
+  font-weight: bold !important;
+}
+.bolder {
+  font-weight: 800 !important;
+}
 .normal-text {
   font-size: large !important;
-  font-style: normal !important;
   font-variant: normal !important;
-  font-weight: lighter;
+  /* font-weight: lighter !important; */
+  line-height: 1.5;
 }
 .center {
   margin: 15px auto !important;
@@ -56,17 +76,39 @@ footer p{
 }
 
 .bigger-text {
-  font-size: larger;
+  font-size: x-large !important;
   font-weight: bolder;
   line-height: 1.5;
 }
 
+.purple-border {
+  
+  border: 5px solid rebeccapurple;
+}
+
+.gray-border {
+  border: 8px solid gray;
+}
+
 .small-text {
-  font-size: 1.2em !important;
+  font-size: 1em !important;
   font-weight: lighter !important;
 
 }
 
+.lucida {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
 .left {
   text-align: left !important;
+}
+
+.v-space {
+  margin-top: 50px !important;
+  margin-bottom: 40px !important;
+}
+
+.justify {
+  text-align: justify !important;
 }
