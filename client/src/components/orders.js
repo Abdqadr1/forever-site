@@ -33,7 +33,8 @@ class Orders extends Component {
         return body;
     }
 
-    delete = (id) => {
+    delete = (Id) => {
+        const id = Number(Id);
         console.log("deleted ", id)
         var all = this.state.all;
         var trash;
