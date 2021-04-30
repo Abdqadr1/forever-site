@@ -48,14 +48,14 @@ class Order extends Component {
 
     render() {
         return ( 
-            <div className={this.state.read ? "order read": "order unread"}>
-                <p className="info"><span>NAME:</span>{this.state.name} <img alt="" src={this.state.isClosed ? expand_more : expand_less} onClick={this.handleClick}/></p>
+            <div className={(this.state.read ? "order read ": "order unread ") + this.props.class}>
+                <p className="info"><span className="key">NAME:</span><span className="value">{this.state.name}</span><img alt="" src={this.state.isClosed ? expand_more : expand_less} onClick={this.handleClick}/></p>
                 <p className="action"><span className="action blue-text" onClick={this.toggleRead}>{this.state.read ? "Mark Unread" : "Mark read"}</span><span onClick={this.handleDelete} className="action red-text">Delete</span></p>
                 <div className={this.state.isClosed ? "hidden" : "shown"}>
-                    <p className="info"><span>ADDRESS:</span>{this.state.address.street}</p>
-                    <p className="info"><span>SELECT PACK:</span>{this.state.pack}</p>
-                    <p className="info"><span>PHONE NUMBER:</span>{this.state.phone}</p>
-                    <p className="info"><span>DELIVERY DATE:</span>{this.state.website}</p>
+                    <p className="info"><span className="key">ADDRESS:</span><span className="value">{this.state.address}</span></p>
+                    <p className="info"><span className="key">SELECT PACK:</span><span className="value">{this.state.pack}</span></p>
+                    <p className="info"><span className="key">PHONE NUMBER:</span><span className="value">{this.state.phone}</span></p>
+                    <p className="info"><span className="key">DELIVERY DATE:</span><span className="value">{this.state.date}</span></p>
                 </div>
                 
             </div>
