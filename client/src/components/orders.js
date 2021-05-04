@@ -14,7 +14,7 @@ class Orders extends Component {
           unread: 0,
           page: 1,
     }
-    entriesByPage = 5
+    entriesByPage = 20
 
     handleChange = (event) => {
         this.setState({
