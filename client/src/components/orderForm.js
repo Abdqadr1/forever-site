@@ -21,14 +21,13 @@ const OrderForm = (props) => {
 
     const callApi = async () => {
         const data = JSON.stringify(formFields);
-        fetch('/api/orders', {
+        fetch('/api/order', {
             method: "post", 
             headers: {'Content-Type': 'application/json'},
             body: data,
          }).then(response => {
              response.json()
          }).then(res => {
-             console.log(res)
              props.gotoThanks();
          }).catch(err => console.log(err))
     }

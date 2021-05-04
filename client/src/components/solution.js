@@ -33,6 +33,7 @@ import IMG1 from '../images/IMG-20200616-WA0026-1.jpg';
 import IMG4 from '../images/IMG-20200707-WA0021-1.jpg';
 import IMG2 from '../images/TEST9-1.jpg';
 import IMG3 from '../images/TEST3-1.jpg';
+import React, {useEffect} from 'react';
 
 
 const Solution = (props) => {
@@ -48,8 +49,19 @@ const Solution = (props) => {
     }
 
     const gotoThanks = () => {
+        //unmount countdown before leaving the page
         props.history.push("/thanks");
     } 
+
+    useEffect(() => {
+        fetch("/orders/views", {
+            method: 'PUT', 
+            headers: {'Content-Type': 'application/json'}
+        })
+        .then(res => res.json())
+        .then(data => console.log(data.message))
+        .catch(err => console.log(err))
+    })
 
     const {one, two, three } = author.products;
 

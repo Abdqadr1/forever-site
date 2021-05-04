@@ -1,20 +1,4 @@
-[
-  {
-    "id": 5,
-    "name": "Adejuyigbe Ayokunle",
-    "address": "",
-    "pack": "",
-    "phone": "09065696337",
-    "date": "12/32/6090",
-    "read": false
-  },
-  {
-    "id": 2,
-    "name": "Adejuyigbe Ayokunle",
-    "address": "Futa south gate",
-    "pack": "3 IN 1",
-    "phone": "09065696337",
-    "date": "12/32/6090",
-    "read": false
-  }
-]
+{
+  "views": 7,
+  "orders": []
+}
