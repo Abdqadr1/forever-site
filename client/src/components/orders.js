@@ -80,15 +80,17 @@ class Orders extends Component {
 
     trash = (Id) => {
         const id = Number(Id);
-        console.log("deleted ", id)
+        console.log("trashed ", id)
         var all = this.state.all;
         var trash = this.state.trash;
         const index = all.findIndex(each => each.id === id);
         trash.unshift(all[index])
         all = all.filter(order => order.id !== id);
+        var unread = all.filter(order =>  order.read === false).length;
         this.setState({
             entries: all.length,
             all,
+            unread,
             orders: all,
             trash,
             active: all
@@ -158,12 +160,14 @@ class Orders extends Component {
         var index = trash.findIndex(order => order.id === id);
         all.unshift(trash[index])
         trash = trash.filter(order => order.id !== id);
+        var unread = all.filter(order =>  order.read === false).length;
         this.setState({
             entries: all.length,
             all,
             orders: trash,
             trash,
             active:trash,
+            unread
         })
     }
 

@@ -71,7 +71,7 @@ class Order extends Component {
             <div className={(this.props.order.read ? "order read ": "order unread ") + this.props.class}>
                 <p className="info"><span className="key">NAME:</span><span className="value">{this.state.name}</span><img alt="" src={this.state.isClosed ? expand_more : expand_less} onClick={this.handleClick}/></p>
                 <p className="action">
-                <span className="action blue-text" onClick={isTrash ? this.restore :this.toggleRead}> {isTrash ? "Restore" : (this.state.read ? "Mark Unread" : "Mark read") }</span>
+                <span className="action blue-text" onClick={isTrash ? this.restore :this.toggleRead}> {isTrash ? "Restore" : (this.props.order.read ? "Mark Unread" : "Mark read") }</span>
                 <span onClick={isTrash ? this.handleDelete : this.handleTrash} className="action red-text">{isTrash ? "Delete Permanently" : "Delete"}</span></p>
                 <div className={this.state.isClosed ? "hidden" : "shown"}>
                     <p className="info"><span className="key">ADDRESS:</span><span className="value">{this.state.address}</span></p>

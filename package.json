@@ -1,16 +1,18 @@
 {
   "name": "forever-site",
   "version": "1.0.0",
+  "engines": {
+    "node": "14.15.4"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "client:build": "cd client && npm run build",
+    "client:build": "cd client && npm start && npm run build",
     "client": "cd client && npm start",
-    "server": "nodemon server.js",
-    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run server\""
+    "start": "nodemon server.js",
+    "dev": "concurrently --kill-others-on-fail \"npm run client\" \"npm run start\""
   },
   "dependencies": {
     "concurrently": "^6.0.2",
-    "express": "^4.17.1",
-    "firebase-tools": "^9.11.0"
+    "express": "^4.17.1"
   }
 }

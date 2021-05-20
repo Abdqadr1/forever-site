@@ -6,9 +6,15 @@ const app = express();
 const port = process.env.PORT || 1888;
 const ordersPath = './orders.json';
 const trashPath  = './trash.json';
+const path = require('path');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+
+
+
+app.use(express.static(path.resolve(__dirname, 'client/build')));
+
 
 
 app.get('/api/orders', (req, res) => {
@@ -26,7 +32,7 @@ app.get('/api/orders', (req, res) => {
             })
         }        
     })
-})
+});
 
 app.post('/api/order', (req, res)=> {
 
@@ -228,5 +234,8 @@ app.put('/orders/reset/views', (_req, res) => {
     
 })
 
+app.get('*', (req, res) => {
+    res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
+});
 
 app.listen(port, () => console.log(`Listening on port ${port}`));
