@@ -12,10 +12,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 
-
+// 
 app.use(express.static(path.resolve(__dirname, 'client/build')));
-
-
 
 app.get('/api/orders', (req, res) => {
     console.log("getting orders");
@@ -234,6 +232,7 @@ app.put('/orders/reset/views', (_req, res) => {
     
 })
 
+// all other requests not handled will return the react app
 app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
 });
