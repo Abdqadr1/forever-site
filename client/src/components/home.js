@@ -19,7 +19,10 @@ const Home = () => {
                 </div>
                 <button className="visit-btn"><Link to='/solution'>VISIT WEBSITE</Link></button> 
             </div>
-            {/* <footer><p>Forever Business Owner @2021 </p></footer>    */}
+            <footer>
+            <p className="disclaimer">Disclaimer</p>
+            <p className="disclaimer-text">This site is not a part of the Facebook or Google websites or Facebook Inc. or Google LLC. Additionally, this site is NOT endorsed by Facebook or Google in any way. FACEBOOK is a trademark of Facebook, Inc. GOOGLE is a trademark of Google LLC.</p>
+            </footer>   
         </div> );
 }
  

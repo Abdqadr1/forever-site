@@ -54,6 +54,7 @@ class Orders extends Component {
     componentDidMount() {
       this.callApi()
       .then(data => {
+          data.orders.orders.reverse();
           var num = data.orders.orders.filter(order => order.read === false).length;
           var orders = [...data.orders.orders];
             this.setState({
